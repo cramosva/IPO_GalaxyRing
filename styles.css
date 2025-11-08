@@ -1,0 +1,39 @@
+/* styles.css — tema claro, académico y simple */
+:root{
+  --bg:#ffffff;
+  --card:#f7f8fa;
+  --accent:#0b57d0;
+  --text:#111111;
+  --sub:#555555;
+  --border:#e5e7eb;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.7}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{max-width:920px;margin:0 auto;padding:0 1rem}
+
+.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border)}
+.site-header .wrap{display:flex;flex-direction:column;gap:.5rem}
+.site-header h1{margin:0;padding:.9rem 0;font-size:1.5rem;letter-spacing:.2px}
+nav{display:flex;gap:.6rem;flex-wrap:wrap;padding:0 0 .8rem 0}
+nav a{padding:.25rem .5rem;border-radius:.4rem;border:1px solid var(--border);font-size:.95rem;background:#fff}
+nav a:hover{background:#f4f7ff}
+
+h2{font-size:1.45rem;margin:1.6rem 0 .8rem 0}
+h3{font-size:1.1rem;margin:1.2rem 0 .6rem 0}
+p{margin:.7rem 0}
+ul{padding-left:1.2rem}
+li{margin:.3rem 0}
+
+figure{background:#fff;padding:.6rem;border-radius:.5rem;border:1px solid var(--border);margin:1rem 0}
+figure img{width:100%;border-radius:.3rem;display:block}
+figcaption{color:var(--sub);font-size:.95rem;margin-top:.4rem}
+
+figure.inline{float:right;max-width:320px;margin:.2rem 0 1rem 1rem}
+@media (max-width: 760px){figure.inline{float:none;max-width:none;margin:0 0 1rem 0}}
+
+.site-footer{border-top:1px solid var(--border);margin-top:2rem}
+.site-footer p{color:var(--sub);padding:1rem 0}
